@@ -1,0 +1,15 @@
+name: heatwaves
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - numpy
+  - pandas
+  - xarray
+  - scipy
+  - netcdf4
+  - pip
+  # Only needed for METHOD = "contrack". See the README (Troubleshooting) if ConTrack stops
+  # with a timedelta error: it does not work with some newer pandas versions.
+  # - pip:
+  #     - git+https://github.com/steidani/ConTrack.git
