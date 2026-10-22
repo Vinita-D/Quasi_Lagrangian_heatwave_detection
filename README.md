@@ -17,7 +17,7 @@ Both work for any domain and for heatwaves and coldwaves.
 | `run_detection.py` | **The file you run.** All settings are at the top. |
 | `heatwave_tools.py` | The functions that do the work. |
 | `make_sample_data.py` | Makes the sample files in `data/` from a large ERA5 file. |
-| `data/tmax_daily_sample.nc` | Sample: daily maximum temperature, mid-latitudes, <<years>>. |
+| `data/tmax_daily_sample.nc` | Sample: daily maximum temperature, mid-latitudes, 2015-2024. Not in this repository: download it from Zenodo (see Quick start). |
 | `data/climatology_p95.nc`, `data/climatology_p05.nc` | Thresholds for `track_obj` (95th and 5th percentile). |
 
 ## Install
