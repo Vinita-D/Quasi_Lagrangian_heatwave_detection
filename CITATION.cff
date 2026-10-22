@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "quasi Lagrangian heatwaves"
+type: software
+authors:
+  - family-names: Deshmukh
+    given-names: Vinita
+version: "v1.0"
+doi: "10.5281/zenodo.23556794"
+date-released: "2026-10-22"
+license: MIT
+repository-code: "https://github.com/Vinita-D/Quasi_Lagrangian_heatwave_detection"
+keywords: [heatwave, coldwave, detection, tracking, ERA5, ConTrack]

@@ -116,7 +116,25 @@ also works for large files. Source: ERA5 (Hersbach et al., 2020), The sample is 
 
 ## Citation and license
 
+If you use this code, please cite the Zenodo record:
 
+> Deshmukh, V. (2026). quasi Lagrangian heatwaves (Version v1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23556794
+
+The DOI 10.5281/zenodo.23556794 always points to the latest version. Version v1.0 has the DOI 10.5281/zenodo.23556795. BibTeX:
+
+```bibtex
+@software{deshmukh_2026_quasi_lagrangian_heatwaves,
+  author    = {Deshmukh, Vinita},
+  title     = {quasi Lagrangian heatwaves},
+  year      = {2026},
+  version   = {v1.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23556794},
+  url       = {https://doi.org/10.5281/zenodo.23556794}
+}
+```
+
+Please also cite the input data: ERA5 (Hersbach et al., 2020, https://doi.org/10.1002/qj.3803).
 
 Please cite ConTrack as requested in its README when you use `METHOD = "contrack"`.
 
