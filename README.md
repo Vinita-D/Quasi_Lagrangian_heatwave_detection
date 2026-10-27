@@ -2,6 +2,24 @@
 
 Detect and track heatwaves or coldwaves in temperature data, with two methods:
 
+## Step by step: from ERA5 to heatwaves.
+
+1. **Get the data.** `python download_era5.py` downloads ERA5 2 m temperature (JJA- it can be hourly or 3 or 6 hourly, regrid it to 1°, Northern Hemisphere) and the land-sea mask from the Copernicus Climate Data Store. The variable name is changed to `t2m`
+2. **Climatology.** For each year, the mean of the same time of day and day of the year over
+   the surrounding years (± `CT_HALF_WINDOW_YEARS`). Computed by `run_detection.py`.
+3. **Anomalies.** Temperature minus that climatology. Computed by `run_detection.py`.
+4. **Tracking.** Points above the percentile threshold are tracked with ConTrack.
+   Computed by `run_detection.py` with `METHOD = "contrack"`.
+To try the code without downloading, use the sample data (see below).
+
+
+
+
+
+
+
+## Step 4: tracking of extreme temperature anomalies detected in Step 3.
+
 | `METHOD` | Input | Tracking |
 |---|---|---|
 | `"track_obj"` | any time resolution, reduced to the daily maximum | own tracking code, events and episodes |
